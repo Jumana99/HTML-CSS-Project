@@ -1,0 +1,696 @@
+/* General */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+   list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    clear: both;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.2);
+    height: 100vh;
+}
+.header{
+    background-image: url('../img/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    /* padding-top: 30px; */
+    overflow: hidden; /*using with margin collapse */
+} 
+
+.navlink-hover:hover{
+    color: #e2785d;
+}
+/* navbar css */
+.navbar{
+    /* margin-top: 50px; */
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+}
+.navbar-aboutus{
+    background-color: #00aced;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.float-item{
+    float: left;
+}
+
+.logo{
+    width: 30%;
+    text-align: left;
+    padding-left: 50px;
+    /* padding-right: 15; */
+}
+.list{
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    width: 60%;
+    text-align: right; 
+}
+
+.list-aboutus{
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    width: 60%;
+    text-align: right; 
+}
+.logo img{
+    width: 45%;
+}
+
+.list .list-item{
+    display: inline-block;
+    width: 80px;
+}
+.list-aboutus .list-item{
+    display: inline-block;
+    width: 80px;
+    color: #595959;
+}
+
+
+.navlink{
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    font-family: 'Alegreya', serif;
+   
+}
+.navlink-aboutus{
+    text-transform: capitalize;
+    color: #595959;
+    font-size: 20px;
+    font-family: 'Alegreya', serif;
+   
+}
+
+/* header content section */
+.header-content{
+    padding-top: 80px;
+    /* margin-top: 50px; */
+}
+.header-content .title{
+    color: white;
+    font-size: 80px;
+    font-family: 'Alegreya', serif;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.header-content .description{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.button{
+    padding: 20px 40px;
+    border-radius: 4px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+    /* padding-left: 12px; */
+    margin-left: 12px;
+    font-weight: 700;
+  
+}
+
+.learn-more{
+    background-color: rgb(193, 171, 132);
+    color: white;
+    cursor: pointer;
+} 
+
+.learn-more:hover{
+    background-color: white;
+    color: black;
+}
+
+.book{
+    background-color: white;
+    color: black;
+}
+.book:hover{
+    opacity: 0.8;
+}
+
+
+.header-icons{
+
+    background-color: white;
+    width: fit-content;
+    box-sizing: border-box;
+    border-radius: 8px;
+    float: left;
+    position:fixed;
+    top: 100px;
+    right: 0; 
+}
+
+
+.header-icons li{
+    background-color: white;
+    display: block;
+    padding: 8px;
+    text-align: center;
+    border: 0.5px solid lightgray;
+    border-radius: 8px;
+}
+
+.header-icons li a{
+    color: rgb(102, 102, 102);
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* About us section css */
+.aboutus-sec{
+    text-align: center;
+}
+.aboutus-content{
+    width: 50%;
+    text-align: left;
+    padding-top: 100px;
+    display: block;
+    padding-right: 50px;
+}
+
+.chef-img{
+   width: 50%;
+}
+.chef-img img{
+    width: 70%;
+}
+
+.aboutus-content h2, .reviewers-content h2{
+    color: #253048;
+    font-size: 36px;
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+   
+}
+
+.aboutus-content h3, .reviewers-content h3{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(193, 171, 132);
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.aboutus-content p{
+    color: #686868;
+    padding-bottom: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33.48px;
+}
+.list-icons{
+    padding-bottom: 25px;
+    /* padding-right: 30px; */
+}
+.list-icons i{
+    color: white;
+    background-color: rgb(193, 171, 132);
+    padding: 15px 18px;
+    border-radius: 100%;
+    font-size: 24px;
+    padding-right: 20px;
+    /* margin-right: 20px; */
+    text-align: center;
+    box-sizing: border-box;
+}
+.list-icons .fa-users{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    /* font-size: 18px !important; */
+}
+
+.list-icons span{
+    font-size: 18px;
+    color: rgb(104, 104, 104);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+}
+ /* Reviewers Section css */
+.reviewers{
+    background-color: rgb(248, 248, 248);
+    padding: 80px 50px;
+}
+
+.reviewers-img img{
+    width: 80%;
+}
+.reviewers-img{
+    width: 60%;
+    text-align: right;
+}
+
+.reviewers-content{
+    width: 40%;
+    text-align: left;
+}
+
+.reviewers-content p{
+    color: #686868;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33.48px;
+    /* opacity: .8; */
+}
+.reviewers-icon i{
+    color: #c1ab84;
+    font-size: 18px;
+    padding-right: 10px;
+    /* margin-right: 10px; */
+    padding-bottom: 20px;
+}
+.reviewers-content span{
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Alegreya Sans', sans-serif;
+    /* opacity: .8; */
+}
+.home-image{
+    background-image: url('../img/shutterstock_280369721.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    padding-top: 40px;
+    
+}
+
+/* Menu */
+.menu{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f8f8f8;
+}
+.menu h2{
+    text-align: center;
+    color: #253048;
+    font-size: 36px;
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.menu h3{
+    text-align: center;
+    color: rgb(193, 171, 132);
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    /* opacity: .8; */
+    /* line-height: 38.64px; */
+}
+.menu-items{
+    /* margin: 0 20px; */
+    padding: 0 20px;
+}
+.dishes{
+    margin-top: 40px;
+    width: 32%;
+    /* padding-right: 40px; */
+    padding-left: 40px;
+    text-align: center;
+    
+}
+.dishes img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.dishes h4{
+    color: #253048;
+    font-size: 21px;
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.dishes p{
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33.48px;
+    /* opacity: 0.8; */
+}
+.menu .button{
+    text-align: center;
+    padding-top: 80px;
+}
+.full-menu{
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    background-color: #c1ab84;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 11px 20px;
+    font-weight: 700;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* location css */
+.location{
+    padding: 85px 50px;
+}
+.location-contant{
+    width: 40%;
+}
+.map{
+    width: 60%;
+    text-align: right;
+}
+.map iframe{
+    width: 80%;
+}
+.location-contant h2{
+    color: #253048;
+    font-size: 36px;
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.location-contant p{
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33.48px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-bottom: 40px;
+}
+
+.location-contant  .contact-details{
+    padding-bottom: 20px !important;
+}
+.location-icons i{
+    background-color: rgb(193, 171, 132);
+    border-radius: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: white;
+    padding-right: 10px;
+    /* margin-right: 10px; */
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+.location-icons span{
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Footer css */
+
+.footer-content{
+    background-color: #403d38;
+    color: white;
+    padding: 50px 30px;
+
+}
+.footer-content h4{
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Alegreya', serif;;
+}
+.aboutus p{
+    color: #969696;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    line-height: 1.86em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding-right: 30px;
+}
+
+.useful-links li{
+    border-bottom: 1px solid rgba(169, 169, 169,0.4);
+    padding-bottom: 15px;
+    padding-top: 15px; 
+    width:200px;
+}
+.useful-links a{
+    
+    color: #A9A9A9;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-left: 10px;
+}
+.opening-hours li p{ 
+    color: #969696;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    width: 200px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(169, 169, 169,0.4);
+    
+}
+
+.contact-details li i{
+    color: #969696;
+    font-size: 18px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.contact-details li span{
+    color: #969696;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.contact-details li{
+    padding-bottom: 30px;
+}
+.contact-details .location-link{
+    line-height: 33.48px;
+}
+.aboutus, .useful-links, .opening-hours, .contact-details{
+    width: 25%;
+}
+
+.social-media{
+    background-color: #353330;
+    text-align: center;
+   padding: 50px 0;
+}
+
+.footer-logo p{
+    color: #777;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.footer-icons a i{
+    color: rgb(140, 138, 134);
+    font-size: 24px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    line-height: 60px;
+    background-color: #484540;
+}
+.footer-icons a{
+    padding-left: 10px;
+    /* margin-left: 10px; */
+    /* box-sizing: border-box; */
+}
+
+/* Complete hover for icons */
+.fa-facebook-f:hover{
+    background-color: #3b5998 !important;
+    color: white;
+}
+.fa-instagram:hover{
+    background-color: #125688 !important;
+    color: white;
+}
+.fa-tiktok:hover{
+    background-color: #32506d !important;
+    color: white;
+}
+.fa-twitter:hover{
+    background-color: #00aced !important;
+    color: white;
+}
+
+/* media query */
+@media screen and (max-width:567px) {
+    /* header */
+    .header{
+        margin-left:auto;
+        margin-right:auto;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+    .home-image{
+        height: 30vh;
+    }
+
+    .logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .list{
+        width: 100%;
+        text-align: center; 
+    }
+    .logo img{
+        width: 30%;
+    }
+    
+    .list .list-item{
+        width: 55px;
+    }
+
+    .header-icons{
+        position:fixed;
+        top: 150px;
+        right: 0; 
+    }
+    .header-content{
+        padding-top: 160px;
+    }
+    .header-content img{
+        width: 80%;
+    }
+    .header-content .title{
+        font-size: 50px;
+    }
+    
+    .header-content .description{
+        font-size: 30px;
+    }
+    .button{
+        padding: 15px 30px;      
+    }
+    /* end header */
+
+    /* about us */
+    .chef-img,  .aboutus-content{
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .aboutus-content h2, .reviewers-content h2{
+        font-size: 30px; 
+        
+        
+    }
+    
+    /* end about us */
+
+    .reviewers-content, .reviewers-img{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .reviewers{
+      padding-left: 0;
+    }
+    /* menu */
+    .dishes{
+        width: 50%;
+        /* padding-right: 40px; */
+        padding-left: 10px;
+    }
+
+    .dishes p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        /* opacity: 0.8; */
+    }
+    .location{
+        padding-left: 0;
+    }
+    .location-contant{
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .aboutus{
+        width: 60%;
+    }
+    .useful-links{
+        width: 40%;
+    }
+
+    .opening-hours{
+        width: 50%;
+    }
+    .contact-details{
+        width: 50%;
+    }
+    .opening-hours li p{ 
+        width: 150px;   
+    }
+    .contact-details h4{
+        padding-bottom: 20px;
+    }
+    .contact-details li i{
+        padding-right: 5px;
+    }
+    
+    .contact-details li span{
+        font-size: 16px;
+    }
+    .contact-details li{
+        padding-bottom: 30px;
+    }
+    .contact-details .location-link{
+        line-height: 20px;
+    }
+
+    .footer-logo img{
+        width: 50%;
+    }
+
+    .useful-links li,  .opening-hours li p{
+        width: 100px;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .footer-icons a i{
+        font-size: 18px;
+    }
+
+}
